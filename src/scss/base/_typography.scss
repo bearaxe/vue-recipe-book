@@ -1,0 +1,19 @@
+body {
+    font-family: 'Lato', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1.6rem;
+    color: $color-accent-dark;
+}
+
+a,
+.btn {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $color-accent-medium;
+    &.router-link-exact-active,
+    &:active {
+        color: $color-accent-dark;
+    }
+}
