@@ -24,7 +24,9 @@
         </template>
       </ul>
 
-      <a href="#" class="recipe-display__edit">Edit</a>
+      <a href="#edit" class="recipe-display__edit">Edit</a>
+
+      <recipe-display-edit />
     </div>
   </div>
 </template>
@@ -32,9 +34,11 @@
 <script>
 import image from '@/../public/data/images/recipe-1.jpg';
 
-export default {
-  props: {
+import RecipeDisplayEdit from '@/components/RecipeDisplayEdit.vue';
 
+export default {
+  components: {
+    RecipeDisplayEdit,
   },
   data() {
     return {
@@ -76,7 +80,7 @@ export default {
     }
 
     ul {
-      box-shadow: 0 .5rem .5rem rgba($color-accent-dark, .65);
+      box-shadow: $box-shadow-default;
       margin: 2rem 0;
 
       &:first-of-type {

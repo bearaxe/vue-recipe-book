@@ -50,6 +50,22 @@ ul {
     }
 }
 
+input {
+    appearance: none;
+    border: none;
+    border-bottom: 1px solid $color-accent-medium;
+    
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+    padding: .5rem 1rem;
+    width: 100%;
+    max-width: 30rem;
+    box-sizing: border-box;
+
+    margin-bottom: 1rem;
+    font-size: inherit;
+}
+
 /*
 *  STYLE 3 from https://css-tricks.com/the-current-state-of-styling-scrollbars/
 */

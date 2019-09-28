@@ -3,6 +3,7 @@
     <img :src="displayData.image" alt="">
     <div class="recipe-card__content">
       <h2>{{ displayData.title }}</h2>
+      <h3>{{ displayData.time }}</h3>
     </div>
   </div>
 </template>
@@ -36,7 +37,7 @@ export default {
 
   border-radius: 2rem;
   overflow: hidden;
-  box-shadow: 0 .5rem .5rem rgba($color-accent-dark, .65);
+  box-shadow: $box-shadow-default;
 
   &__content {
     padding: 1.5rem 2rem;

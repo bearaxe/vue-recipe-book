@@ -26,7 +26,6 @@ export default {
     flex-direction: column;
     @media only screen and (min-width: $bp-smallest) {
       overflow: hidden;
-
       position: relative;
       .scroll-container {
         position: absolute;
