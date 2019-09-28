@@ -23,20 +23,25 @@ ul {
     background-color: $color-accent-light;
     padding: 2rem;
     border-radius: 1rem 2rem;
+
+    li {
+        display: flex;
+        padding-bottom: 2rem;
+    }
     &.paren-list {
         li {
-            display: flex;
-            padding-bottom: 2rem;
             span {
                 text-align: right;
-                flex: 0 0 2.5vw;
-                margin-right: .5vw;
+                flex: 0 0 5%;
+                margin-right: .75rem;
+                font-size: 2rem;
+                font-weight: 600;
             }
         }
     }
     &.dot-list {
         li {
-            margin-left: 1.25vw;
+            margin-left: 3.25%;
             &::before {
                 content: "• ";
                 margin-right: .5vw;
