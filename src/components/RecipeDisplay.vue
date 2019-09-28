@@ -51,10 +51,16 @@ export default {
 
     }
     &__content {
-      margin: 2rem;
+      padding: .5rem 1rem;
+      margin: 0 auto;
+      max-width: 80rem;
     }
     &__link {
-
+      h1 {
+        padding-bottom: 0;
+        border-bottom: 2px solid $color-accent-medium;
+        margin-bottom: 1rem
+      }
     }
     &__ingredients {
 
@@ -70,7 +76,9 @@ export default {
     }
 
     ul {
+      box-shadow: 0 .5rem .5rem rgba($color-accent-dark, .65);
       margin: 2rem 0;
+
       &:first-of-type {
         margin-top: 0;
       }
