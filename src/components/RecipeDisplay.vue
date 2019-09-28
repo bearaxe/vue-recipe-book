@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import image from '@/../public/data/images/recipe-1.jpeg';
+import image from '@/../public/data/images/recipe-1.jpg';
 
 export default {
   props: {

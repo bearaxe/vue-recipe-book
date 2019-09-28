@@ -1,18 +1,20 @@
 <template>
   <div class="home">
     <recipe-display />
-    <div class="recipe-list">Component Recipe List</div>
+    <recipe-list />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import RecipeDisplay from '@/components/RecipeDisplay.vue';
+import RecipeList from '@/components/RecipeList.vue';
 
 export default {
   name: 'home',
   components: {
     RecipeDisplay,
+    RecipeList,
   },
 };
 </script>
