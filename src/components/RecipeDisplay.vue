@@ -1,6 +1,6 @@
 <template>
   <div class="recipe-display">
-    <img class="recipe-display__image" src="@/../public/data/images/recipe-1.jpeg" alt="Recipe Image">
+    <img class="recipe-display__image" :src="testImg" alt="Recipe Image">
     <div class="recipe-display__content">
       <a href="https://www.google.com" class="recipe-display__link">
         <h1 class="heading-1" v-text="'Some Recipe Title'" />
@@ -16,16 +16,12 @@
       </ul>
 
       <ul class="recipe-display__instructions paren-list">
-        <li class="recipe-display__instructions--step-1">Step 1</li>
-        <li class="recipe-display__instructions--step-2">Step 2</li>
-        <li class="recipe-display__instructions--step-3">Step 3</li>
-        <li class="recipe-display__instructions--step-4">Step 4</li>
-        <li class="recipe-display__instructions--step-5">Step 5</li>
-        <li class="recipe-display__instructions--step-6">Step 6</li>
-        <li class="recipe-display__instructions--step-7">Step 7</li>
-        <li class="recipe-display__instructions--step-8">Step 8</li>
-        <li class="recipe-display__instructions--step-9">Step 9</li>
-        <li class="recipe-display__instructions--step-10">Step 10</li>
+        <template  v-for="n in 10">
+          <li :key="`ins${n}`" class="recipe-display__instruction">
+            <span class="number" v-text="n + ') '" />
+            {{ testText }}
+          </li>
+        </template>
       </ul>
 
       <a href="#" class="recipe-display__edit">Edit</a>
@@ -34,9 +30,17 @@
 </template>
 
 <script>
+import image from '@/../public/data/images/recipe-1.jpeg';
+
 export default {
   props: {
 
+  },
+  data() {
+    return {
+      testText: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quam temporibus repellendus suscipit doloribus rerum, molestias, et dolore natus nam accusamus fugiat, id ex porro quisquam? Quo necessitatibus architecto asperiores?',
+      testImg: image,
+    };
   },
 };
 </script>
