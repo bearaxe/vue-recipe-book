@@ -24,13 +24,15 @@ export default {
   .recipe-list {
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    @media only screen and (min-width: $bp-smallest) {
+      overflow: hidden;
 
-    position: relative;
-    .scroll-container {
-      position: absolute;
-      height: 100%;
-      overflow-y: auto;
+      position: relative;
+      .scroll-container {
+        position: absolute;
+        height: 100%;
+        overflow-y: auto;
+      }
     }
   }
 </style>

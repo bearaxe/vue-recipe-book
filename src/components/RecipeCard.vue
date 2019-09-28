@@ -1,7 +1,9 @@
 <template>
   <div class="recipe-card">
     <img :src="displayData.image" alt="">
-    <h2>{{ displayData.title }}</h2>
+    <div class="recipe-card__content">
+      <h2>{{ displayData.title }}</h2>
+    </div>
   </div>
 </template>
 
@@ -28,6 +30,16 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+.recipe-card {
+  margin: 2rem;
 
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: 0 .5rem .5rem rgba($color-accent-dark, .65);
+
+  &__content {
+    padding: 1.5rem 2rem;
+  }
+}
 </style>
