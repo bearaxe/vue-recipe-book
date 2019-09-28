@@ -16,3 +16,18 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+  .home {
+    @media only screen and (min-width: $bp-smallest) {
+      display: flex;
+
+      > div {
+        flex: 1 1 50%;
+        &.recipe-display {
+          order: 1;
+        }
+      }
+    }
+  }
+</style>
