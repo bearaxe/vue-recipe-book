@@ -1,10 +1,12 @@
 <template>
   <div class="recipe-list">
-    <template v-for="n in 25">
-      <recipe-card
-        :key="`rcard${n}`"
-      />
-    </template>
+    <div class="scroll-container">
+      <template v-for="n in 25">
+        <recipe-card
+          :key="`rcard${n}`"
+        />
+      </template>
+    </div>
   </div>
 </template>
 
@@ -18,6 +20,17 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+  .recipe-list {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 
+    position: relative;
+    .scroll-container {
+      position: absolute;
+      height: 100%;
+      overflow-y: auto;
+    }
+  }
 </style>

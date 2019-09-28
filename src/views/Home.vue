@@ -23,11 +23,20 @@ export default {
   .home {
     @media only screen and (min-width: $bp-smallest) {
       display: flex;
+      // display: grid;
+      // grid-template-columns: 1fr 1fr;
+      // grid-gap: 1.5rem;
 
       > div {
         flex: 1 1 50%;
         &.recipe-display {
           order: 1;
+
+          grid-column: 2 / -1;
+        }
+
+        &.recipe-list {
+          grid-column: 1 / 2;
         }
       }
     }

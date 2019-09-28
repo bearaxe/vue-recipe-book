@@ -20,7 +20,6 @@ export default {
     };
   },
   mounted() {
-    console.log(this.data);
     this.displayData = {
       ...testData.recipes[this.dataId],
       image: hackyTest[this.dataId],
