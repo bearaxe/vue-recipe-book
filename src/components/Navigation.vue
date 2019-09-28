@@ -1,7 +1,7 @@
 <template>
   <header class="nav">
     <router-link class="btn" to="/">Home</router-link>
-    <router-link class="btn" to="/rank">Rank</router-link>
+    <!-- <router-link class="btn" to="/rank">Rank</router-link> -->
   </header>
 </template>
 

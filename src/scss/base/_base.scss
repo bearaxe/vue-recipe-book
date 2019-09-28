@@ -18,3 +18,33 @@ p {
     padding: 1rem;
     cursor: pointer;
 }
+
+ul {
+    background-color: $color-accent-light;
+    padding: 1rem;
+    border-radius: 2rem;
+    &.paren-list {
+        counter-reset: parenList;
+        li {
+            &::before {
+                counter-increment: parenList;
+                content: counter(parenList)") ";
+                font-weight: 700;
+                font-size: 1.7rem;
+            }
+            &:not(:nth-child(n+10)){
+               text-indent: 1rem;
+            }
+        }
+    }
+    &.dot-list {
+        li::before {
+            content: "• ";
+            padding-right: .5rem;
+        }
+
+        li {
+            text-indent: 1rem;
+        }
+    }
+}
