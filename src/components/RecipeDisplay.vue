@@ -6,23 +6,9 @@
         <h1 class="heading-1" v-text="'Some Recipe Title'" />
       </a>
       <h3 class="heading-3" v-text="'Time: 40 minutes'" />
-      <ul class="recipe-display__ingredients dot-list">
-        <li class="recipe-display__ingredient">Ingredient 1</li>
-        <li class="recipe-display__ingredient">Ingredient 2</li>
-        <li class="recipe-display__ingredient">Ingredient 3</li>
-        <li class="recipe-display__ingredient">Ingredient 4</li>
-        <li class="recipe-display__ingredient">Ingredient 5</li>
-        <li class="recipe-display__ingredient">Ingredient 6</li>
-      </ul>
 
-      <ul class="recipe-display__instructions paren-list">
-        <template  v-for="n in 10">
-          <li :key="`ins${n}`" class="recipe-display__instruction">
-            <span class="number" v-text="n + ') '" />
-            {{ testText }}
-          </li>
-        </template>
-      </ul>
+      <list-ingredients />
+      <list-instructions />
 
       <a href="#edit" class="recipe-display__edit">Edit</a>
 
@@ -35,10 +21,14 @@
 import image from '@/../public/data/images/recipe-1.jpg';
 
 import RecipeDisplayEdit from '@/components/RecipeDisplayEdit.vue';
+import ListIngredients from '@/components/ListIngredients.vue';
+import ListInstructions from '@/components/ListInstructions.vue';
 
 export default {
   components: {
     RecipeDisplayEdit,
+    ListIngredients,
+    ListInstructions,
   },
   data() {
     return {
@@ -51,9 +41,6 @@ export default {
 
 <style lang="scss">
   .recipe-display {
-    &__image {
-
-    }
     &__content {
       padding: .5rem 1rem;
       margin: 0 auto;
@@ -65,18 +52,6 @@ export default {
         border-bottom: 2px solid $color-accent-medium;
         margin-bottom: 1rem
       }
-    }
-    &__ingredients {
-
-    }
-    &__ingredient{
-
-    }
-    &__instructions{
-
-    }
-    &__instruction{
-
     }
 
     ul {

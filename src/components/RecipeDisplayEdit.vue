@@ -57,9 +57,7 @@ export default {
       transform: translateX(-50%);
       border-radius: .5rem;
 
-      @media only screen and (min-width: $bp-smallest) {
-        max-width: 50%;
-      }
+
     }
 
     &__close {

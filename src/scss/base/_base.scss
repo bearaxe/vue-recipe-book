@@ -39,15 +39,15 @@ ul {
             }
         }
     }
-    &.dot-list {
-        li {
-            margin-left: 3.25%;
-            &::before {
-                content: "• ";
-                margin-right: .5vw;
-            }
-        }
-    }
+    // &.dot-list {
+    //     li {
+    //         margin-left: 3.25%;
+    //         &::before {
+    //             content: "• ";
+    //             margin-right: .5vw;
+    //         }
+    //     }
+    // }
 }
 
 input {
