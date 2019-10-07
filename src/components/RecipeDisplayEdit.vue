@@ -14,6 +14,7 @@
           <h3>ingredients:</h3>
           <ingredient-editor />
           <h3>instructions:</h3>
+          <instructions-editor />
         </div>
       </div>
     </div>
@@ -22,10 +23,12 @@
 
 <script>
 import ingredientEditor from '@/components/ListIngredientsEdit.vue';
+import instructionsEditor from '@/components/ListInstructionsEdit.vue';
 
 export default {
   components: {
     ingredientEditor,
+    instructionsEditor,
   },
 
 };

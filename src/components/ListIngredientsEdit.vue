@@ -35,13 +35,5 @@ export default {
 </script>
 
 <style lang="scss">
-.ingredient-edit {
-  &__textarea {
-    width: 100%;
-    border: none;
-    outline: none;
-    margin-bottom: 2rem;
-    min-height: 20rem;
-  }
-}
+
 </style>

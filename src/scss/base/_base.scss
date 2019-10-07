@@ -46,6 +46,14 @@ input {
     font-size: inherit;
 }
 
+textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-bottom: 2rem;
+    min-height: 20rem;
+}
+
 /*
 *  STYLE 3 from https://css-tricks.com/the-current-state-of-styling-scrollbars/
 */
