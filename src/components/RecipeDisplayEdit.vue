@@ -12,6 +12,7 @@
           <h3>time: Current time</h3>
           <input type="text" placeholder="New Time" />
           <h3>ingredients:</h3>
+          <ingredient-editor />
           <h3>instructions:</h3>
         </div>
       </div>
@@ -20,7 +21,12 @@
 </template>
 
 <script>
+import ingredientEditor from '@/components/ListIngredientsEdit.vue';
+
 export default {
+  components: {
+    ingredientEditor,
+  },
 
 };
 </script>
@@ -46,6 +52,8 @@ export default {
       left: 0;
       background-color: rgba($color-black, .6);
       z-index: 1;
+
+      overflow-y: scroll;
     }
 
     &__container {
@@ -56,8 +64,7 @@ export default {
       left: 50%;
       transform: translateX(-50%);
       border-radius: .5rem;
-
-
+      margin-bottom: 15rem;
     }
 
     &__close {

@@ -2,7 +2,7 @@
   <ul class="paren-list">
     <template  v-for="n in list.length - 1">
       <li :key="`ins${n}`" class="paren-list__item">
-        <span class="paren-list_number" v-text="n + ') '" />
+        <span class="paren-list__number" v-text="n + ') '" />
         {{ list[n] }}
       </li>
     </template>

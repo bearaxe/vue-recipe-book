@@ -28,26 +28,6 @@ ul {
         display: flex;
         padding-bottom: 2rem;
     }
-    &.paren-list {
-        li {
-            span {
-                text-align: right;
-                flex: 0 0 5%;
-                margin-right: .75rem;
-                font-size: 2rem;
-                font-weight: 600;
-            }
-        }
-    }
-    // &.dot-list {
-    //     li {
-    //         margin-left: 3.25%;
-    //         &::before {
-    //             content: "• ";
-    //             margin-right: .5vw;
-    //         }
-    //     }
-    // }
 }
 
 input {
