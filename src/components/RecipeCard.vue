@@ -1,9 +1,9 @@
 <template>
   <div class="recipe-card">
-    <img :src="displayData.image" alt="">
+    <img class="recipe-card__image" :src="displayData.image" alt="">
     <div class="recipe-card__content">
-      <h2>{{ displayData.title }}</h2>
-      <h3>{{ displayData.time }}</h3>
+      <h2 class="recipe-card__title">{{ displayData.title }}</h2>
+      <h3 class="recipe-card__time">{{ displayData.time }}</h3>
     </div>
   </div>
 </template>
@@ -38,9 +38,25 @@ export default {
   border-radius: 2rem;
   overflow: hidden;
   box-shadow: $box-shadow-default;
+  position: relative;
+  transition: all .3s;
 
   &__content {
-    padding: 1.5rem 2rem;
+    position: absolute;
+    bottom: 2rem;
+  }
+
+  &__title,
+  &__time {
+    padding: .5rem 2rem;
+    background: $color-accent-medium;
+    margin-bottom: .5rem;
+    clip-path: polygon(0 0, 95% 0, 100% 100%, 0 100%);
+    max-width: 25rem;
+  }
+
+  &:hover {
+    transform: scale(1.05);
   }
 }
 </style>
