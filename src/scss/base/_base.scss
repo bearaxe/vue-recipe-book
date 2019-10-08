@@ -61,17 +61,17 @@ textarea {
 /*
 *  STYLE 3 from https://css-tricks.com/the-current-state-of-styling-scrollbars/
 */
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba($color-grey,0.3);
-    background-color: $color-accent-light;
-}
+// ::-webkit-scrollbar-track {
+//     -webkit-box-shadow: inset 0 0 6px rgba($color-grey,0.3);
+//     background-color: $color-accent-light;
+// }
 
-::-webkit-scrollbar {
-    width: 6px;
-    background-color: $color-grey;
-}
+// ::-webkit-scrollbar {
+//     width: 6px;
+//     background-color: $color-grey;
+// }
 
-::-webkit-scrollbar-thumb {
-    // height: 3px;
-    background-color: $color-accent-medium;
-}
+// ::-webkit-scrollbar-thumb {
+//     // height: 3px;
+//     background-color: $color-accent-medium;
+// }

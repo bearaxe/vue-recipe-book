@@ -34,7 +34,6 @@ export default {
 <style lang="scss">
 .recipe-card {
   border-radius: 2rem;
-  margin: 2rem;
   overflow: hidden;
   position: relative;
 
