@@ -33,12 +33,12 @@ export default {
 
 <style lang="scss">
 .recipe-card {
-  margin: 2rem;
-
   border-radius: 2rem;
+  margin: 2rem;
   overflow: hidden;
-  box-shadow: $box-shadow-default;
   position: relative;
+
+  box-shadow: $box-shadow-default;
   transition: all .3s;
 
   &__content {
@@ -48,11 +48,11 @@ export default {
 
   &__title,
   &__time {
-    padding: .5rem 2rem;
     background: $color-accent-medium;
-    margin-bottom: .5rem;
     clip-path: polygon(0 0, 95% 0, 100% 100%, 0 100%);
+    margin-bottom: .5rem;
     max-width: 25rem;
+    padding: .5rem 2rem;
   }
 
   &:hover {
