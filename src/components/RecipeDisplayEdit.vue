@@ -33,11 +33,11 @@ export default {
 <style lang="scss">
  .recipe-edit {
    opacity: 0;
-   &:target {
+  &:target {
     opacity: 1;
     .modal__overlay {
       display: block;
     }
-   }
+  }
  }
 </style>
